@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Posh Healing Parlour | Massage, Spa & Beauty in Fort Portal, Uganda</title>
-<meta name="description" content="Posh Healing Parlour, A Path to Your Health. Kiboga Road, Fort Portal — massage therapy, facials & skincare, manicure & pedicure, waxing and body scrubs. Book on WhatsApp: 0782 098 478.">
-<meta name="keywords" content="spa Fort Portal, massage Fort Portal, healing parlour Uganda, facial Fort Portal, manicure pedicure Fort Portal, Posh Healing Parlour">
+<meta name="description" content="Posh Healing Parlour, A Path to Your Health. Kiboga Road, Fort Portal: massage therapy, herbal steaming therapy, facials & skincare, manicure & pedicure, waxing, body scrubs, breakfast and medicinal juice. Book on WhatsApp: 0782 098 478.">
+<meta name="keywords" content="steaming therapy Fort Portal, herbal steam Uganda, medicinal juice Fort Portal, breakfast Fort Portal, spa Fort Portal, massage Fort Portal, healing parlour Uganda, facial Fort Portal, manicure pedicure Fort Portal, Posh Healing Parlour">
 <link rel="canonical" href="https://asiimwe3.github.io/posh-healing-parlour/">
 <meta property="og:title" content="Posh Healing Parlour | Massage, Spa & Beauty in Fort Portal">
 <meta property="og:description" content="Relax, heal and glow. Massage therapy, facials, nails and body treatments on Kiboga Road, Fort Portal. Book on WhatsApp: 0782 098 478.">
@@ -21,7 +21,7 @@
   "@context": "https://schema.org",
   "@type": "DaySpa",
   "name": "Posh Healing Parlour",
-  "description": "Health spa and healing parlour in Fort Portal offering massage therapy, facials & skincare, manicure & pedicure, waxing and body scrubs.",
+  "description": "Health spa and healing parlour in Fort Portal offering massage therapy, steaming therapy with local herbs, facials & skincare, manicure & pedicure, waxing, body scrubs, breakfast, medicinal juice, coffee and green tea.",
   "address": {"@type": "PostalAddress", "streetAddress": "Kiboga Road", "addressLocality": "Fort Portal", "addressCountry": "UG"},
   "telephone": "+256782098478",
   "priceRange": "UGX",
@@ -93,10 +93,21 @@ header{position:sticky;top:0;z-index:60;background:rgba(28,20,16,.97);color:var(
 /* services: single column, horizontal cards on phones */
 .grid{display:grid;grid-template-columns:1fr;gap:16px}
 .card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 6px 24px rgba(60,40,20,.08);display:flex;flex-direction:column}
+.card{position:relative}
+.badge-new{position:absolute;top:12px;left:12px;z-index:2;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#fff;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:5px 11px;border-radius:999px;box-shadow:0 4px 12px rgba(0,0,0,.25)}
 .card img{height:170px;object-fit:cover;width:100%}
 .card-body{padding:16px 18px 20px}
 .card h3{font-family:Georgia,serif;font-size:20px;margin-bottom:6px}
 .card p{font-size:15px;color:var(--muted)}
+
+
+/* cafe menu */
+.menu-box{background:#fff;border-radius:18px;padding:20px 18px;margin-top:26px;box-shadow:0 6px 24px rgba(60,40,20,.08);border:1px solid #eadfcd}
+.menu-box h3{font-family:Georgia,serif;font-size:21px;margin-bottom:4px}
+.menu-box .mb-sub{font-size:14.5px;color:var(--muted);margin-bottom:14px}
+.menu-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;list-style:none}
+.menu-list li{background:var(--cream);border-radius:12px;padding:14px 12px;text-align:center;font-weight:600;font-size:15px;display:flex;flex-direction:column;gap:4px;align-items:center}
+.menu-list li span{font-size:26px}
 
 /* about */
 .about{display:grid;grid-template-columns:1fr;gap:28px;align-items:center}
@@ -146,8 +157,10 @@ footer.site a{color:var(--gold)}
   .grid{grid-template-columns:repeat(2,1fr);gap:22px}
   .card img{height:200px}
   .why-grid{grid-template-columns:repeat(4,1fr);gap:18px}
+  .menu-list{grid-template-columns:repeat(4,1fr)}
+  .menu-box{padding:26px 28px}
   .why{padding:24px 16px}
-  .gal{grid-template-columns:repeat(4,1fr);gap:16px}
+  .gal{grid-template-columns:repeat(3,1fr);gap:16px}
   .gal img{height:220px}
   .hero-actions,.c-actions{flex-direction:row;justify-content:center;max-width:none}
   .c-actions{justify-content:flex-start}
@@ -167,7 +180,7 @@ footer.site a{color:var(--gold)}
   .nav-links a:hover{opacity:1;color:var(--gold)}
   .nav-links a.nav-cta{margin:0;padding:9px 18px;opacity:1}
   .brand b{font-size:18px}
-  .grid{grid-template-columns:repeat(4,1fr)}
+  .grid{grid-template-columns:repeat(3,1fr)}
   .about{grid-template-columns:1.1fr .9fr;gap:44px}
   .c-grid{grid-template-columns:1fr 1fr;gap:36px}
   .map{height:auto;min-height:340px}
@@ -199,7 +212,7 @@ footer.site a{color:var(--gold)}
     <span class="eyebrow">Kiboga Road &middot; Fort Portal</span>
     <h1>Relax. Heal. <span>Glow.</span></h1>
     <div class="hero-tag">A Path to Your Health</div>
-    <p>Posh Healing Parlour is Fort Portal's home of calm — massage therapy, skincare and beauty treatments given with warm, personal care.</p>
+    <p>Posh Healing Parlour is Fort Portal's home of calm — massage, herbal steaming therapy, skincare and beauty treatments, plus breakfast and healthy drinks, all given with warm, personal care.</p>
     <div class="hero-actions">
       <a class="btn btn-wa" href="https://wa.me/256782098478?text=Hello%20Posh%20Healing%20Parlour%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">Book on WhatsApp</a>
       <a class="btn btn-gold" href="tel:+256782098478">Call 0782 098 478</a>
@@ -231,8 +244,29 @@ footer.site a{color:var(--gold)}
         <img src="assets/hero-spa.png" alt="Body treatments and scrubs at Posh Healing Parlour Fort Portal" loading="lazy">
         <div class="card-body"><h3>Body Scrubs &amp; Waxing</h3><p>Gentle body scrubs and professional waxing for smooth, refreshed skin from head to toe.</p></div>
       </div>
+      <div class="card card-new">
+        <span class="badge-new">New</span>
+        <img src="assets/steam.png" alt="Steaming therapy with local herbs at Posh Healing Parlour Fort Portal" loading="lazy">
+        <div class="card-body"><h3>Steaming Therapy</h3><p>A deeply cleansing herbal steam made with local herbs. It opens the pores, eases tension and leaves your body light and refreshed.</p></div>
+      </div>
+      <div class="card card-new">
+        <span class="badge-new">New</span>
+        <img src="assets/cafe.png" alt="Breakfast, medicinal juice, coffee and green tea at Posh Healing Parlour Fort Portal" loading="lazy">
+        <div class="card-body"><h3>Breakfast &amp; Healthy Drinks</h3><p>Start or end your visit with breakfast, medicinal juice, coffee or green tea, served fresh right at the parlour.</p></div>
+      </div>
     </div>
-    <p style="margin-top:26px;font-size:15px;color:var(--muted)">Looking for a specific treatment? <a href="https://wa.me/256782098478?text=Hello%2C%20what%20services%20do%20you%20offer%3F" target="_blank" rel="noopener"><b>Ask us on WhatsApp</b></a> — full price list available on request.</p>
+
+    <div class="menu-box" id="menu">
+      <h3>Eat, sip &amp; unwind</h3>
+      <p class="mb-sub">New at the parlour: nourishing food and healthy drinks to go with your treatment.</p>
+      <ul class="menu-list">
+        <li><span>🍳</span>Breakfast</li>
+        <li><span>🥤</span>Medicinal Juice</li>
+        <li><span>☕</span>Coffee</li>
+        <li><span>🍵</span>Green Tea</li>
+      </ul>
+    </div>
+    <p style="margin-top:26px;font-size:15px;color:var(--muted)">Want to know more about a treatment or today's menu? <a href="https://wa.me/256782098478?text=Hello%2C%20what%20services%20do%20you%20offer%3F" target="_blank" rel="noopener"><b>Ask us on WhatsApp</b></a> — full price list available on request.</p>
   </div>
 </section>
 
@@ -273,6 +307,8 @@ footer.site a{color:var(--gold)}
       <figure><img src="assets/massage.png" alt="Back massage therapy session" loading="lazy"></figure>
       <figure><img src="assets/facial.png" alt="Facial treatment setup with natural products" loading="lazy"></figure>
       <figure><img src="assets/nails.png" alt="Manicure and pedicure station" loading="lazy"></figure>
+      <figure><img src="assets/steam.png" alt="Herbal steaming therapy with local herbs" loading="lazy"></figure>
+      <figure><img src="assets/cafe.png" alt="Breakfast, medicinal juice, coffee and green tea" loading="lazy"></figure>
     </div>
   </div>
 </section>
