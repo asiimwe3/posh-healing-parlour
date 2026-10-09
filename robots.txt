@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://asiimwe3.github.io/posh-healing-parlour/sitemap.xml
